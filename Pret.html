@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pret</title>
     <link rel="stylesheet" href="./css/Pret.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="head">
@@ -20,6 +23,43 @@
         </ul>
         <button><a href="./login.html">Connecter</a></button>
     </header>
+    
+    
+    <!--section d'entête-->
+	<section class="home-pret" id="home">
+		<div class="home-text">
+			<h1>FutureBank</h1>
+            <br>
+            <h1 style="font-weight: 900;">Prêt</h1>
+		</div>
+	</section>
+
+    <!--Main section-->
+    <section id="main">
+        <h2>Vous souhaitez acquérir un logement ? <br>Un véhicule ? Ou encore voyager ?</h2>
+        <p>Sélectionnez le montant et la durée de crédit vous <br>correspondant et effectuez la simulation de votre prêt, <br> en quelques clics seulement.</p>
+        <form name="myForm" >
+            <input type="text" name="Montant" placeholder="Le montant">
+            <input type="text" name="Duree" placeholder="La durée en mois">
+            <input type="submit" value="Simuler">
+        </form>
+        <div class="mensualite">
+            <p>Mensualité : </p>
+        </div>
+    </section>
+
+    <div class="ruban"></div>
+
+    <!--Assistance-->
+    <section class="assistance">
+        <img src="images/nous-contacter.png" alt="image d'une conseillere ">
+        <div class="assist">
+            <h2>Assistance</h2>
+            <p>Si vous souhaitez être contacté par l'un de nos conseillers, veuillez remplir le formulaire ci-dessous. Nous nous engageons à vous répondre rapidement. Assurez-vous que cette page est responsive et accessible sur tous les écrans.</p>
+            <input type="email" name="email" placeholder="Votre email">
+            <button>Envoyer</button>
+        </div>
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>

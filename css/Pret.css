@@ -20,6 +20,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    z-index: 1000;
     
 }
 header .logo{
@@ -97,3 +98,135 @@ header button{
     }
 }
 /* end nav  */
+.home-pret{
+    position: relative;
+	width: 100%;
+	height: 100vh;
+    background: url(../images/pret-entete.png);
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+}
+
+.home-text h1{
+	color:#ffffff; 
+	font-size : 80px;
+	font-family: 'Poppins', sans-serif; 
+}
+
+.home-text{
+    margin-left: 100px;
+}
+
+#main{
+    margin: 70px 22%;
+}
+#main h2{
+    font-size: 50px;
+    color: #2D3742; 
+    margin: 50px 0;
+    font-family: "Work sans", sans-serif;
+}
+#main p{
+    font-size: 24px;
+    font-family: "Work sans", sans-serif;
+}
+#main form{
+    max-width: 100%;
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+#main form input{
+    display: inline-block;
+	font-family: 'Work Sans', sans-serif; 
+    font-size: 24px;
+    background-color: #EDF0FA;
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+#main form input:last-child{
+    background: #0095D9;
+    color : #ffffff;
+    cursor: pointer;
+}
+.mensualite{
+    display: flex ;
+    justify-content: center; 
+    max-width : 100%; 
+    margin: 0 auto;  
+    position: relative;    
+}
+.mensualite p{
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 24px;
+    width: 80%;
+    margin : 0 auto;
+    padding: 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    background-color: rgb(237, 203, 45);
+    color : #ffffff;
+}
+.ruban{
+    width: 100%;
+    height: 100px; 
+    background-color: #EDF0FA;
+}
+.assistance{
+    margin : 70px 15%;
+    display: flex; 
+}
+.assist{
+    margin: 10px 50px;
+}
+.assist h2{
+    font-family: 'Work Sans', sans-serif; 
+    padding: 5px;
+    margin: 10px;
+    color: #2D3742;
+}
+.assist p{
+    padding: 5px; 
+    margin: 10px; 
+    font-size: 20px;
+}
+.assist input{
+    display: inline-block;
+	font-family: 'Work Sans', sans-serif; 
+    font-size: 24px;
+    background-color: #EDF0FA;
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin: 10px;
+}
+.assist button{
+    display: inline-block;
+	font-family: 'Work Sans', sans-serif; 
+    font-size: 24px;
+    background-color: #EDF0FA;
+    width: 40%;
+    padding: 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    margin: 10px;
+    background: #0095D9;
+    color : #ffffff;
+    cursor: pointer;
+}
