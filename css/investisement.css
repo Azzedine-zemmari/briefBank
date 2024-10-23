@@ -76,12 +76,12 @@ header button{
     font-size: 47px;
     font-weight: 600;
 }
+/* end home */
 .project{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 .description{
     padding: 20px 0;
@@ -98,6 +98,7 @@ header button{
 .description p{
     text-align: center;
 }
+/* projects start */
 .projects{
     display: grid;
     grid-template-columns: repeat(3,auto);
@@ -109,9 +110,6 @@ header button{
     justify-content: center;
     padding: 20px 0;
 }
-/* .cards{
-    margin: 10px ;
-} */
 .card{
     background-color: #f5f5f5;
     width: 400px;
@@ -147,8 +145,58 @@ header button{
     border: none;
     font-weight: 700;
 }
-/* end home */
-@media (max-width:600px){
+/* projects end */
+/* footer */
+footer{
+    background-color: #2D394B;
+    margin: 10px 0 0 0 ;
+}
+.all{
+    display: flex;
+    padding:20px 20px;
+    color: #f5f5f5;
+    justify-content: center;
+    /* flex-wrap: wrap ; */
+}
+.c1 , .c2{
+    display: flex;
+}
+.Fdescription img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.Fdescription , .Explore , .Apropos , .social{
+    margin:0 40px;
+}
+.Fdescription p{
+    max-width: 200px;
+}
+.Explore h4 , .Apropos h5 , .social h6{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.all li{
+    padding: 5px 0;
+}
+.socialLinks img{
+    padding: 0 10px 0 0;
+    width: 40px;
+}
+.Explore li , .Apropos li{
+    font-weight: 500;
+}
+.copyright{
+    background-color: #EDF0FA;
+}
+.copyright p{
+    color: #2D394B;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+/* end footer */
+@media (max-width:800px){
     header{
         padding: 0 10px;
     }
@@ -214,6 +262,38 @@ header button{
     .description p{
         font-size: 14px;
     }
+    .all{
+        flex-direction: column;
+    }
+    .c1,.c2{
+        display: flex;
+        justify-content: center;
+    }
+    .Fdescription , .Explore , .Apropos , .social{
+        margin: 0 ;
+    }
+    .Fdescription img{
+        width: 140px;
+    }
+    .social h6 , .Explore h4, .Apropos h5{
+        font-size: 18px;
+    }
+    .social {
+        margin-top: 10px;
+    }
+    .c2 .Apropos{
+        margin-right: 60px;
+    }
+    .social img {
+        width: 30px;
+        padding: 0 5px 0;
+    }
+    .social svg{
+        width: 20px;
+        height: 20px;
+        /* padding: 0 5px 0; */
+    }
+
 }
 @media (max-width:400px){
     .card img , .card{
