@@ -41,12 +41,13 @@
         <h2>Vous souhaitez acquérir un logement ? <br>Un véhicule ? Ou encore voyager ?</h2>
         <p>Sélectionnez le montant et la durée de crédit vous <br>correspondant et effectuez la simulation de votre prêt, <br> en quelques clics seulement.</p>
         <form name="myForm" >
-            <input type="text" name="Montant" placeholder="Le montant">
-            <input type="text" name="Duree" placeholder="La durée en mois">
-            <input type="submit" value="Simuler">
+            <input type="text" name="Montant" class="montant" placeholder="Le montant (en dh)">
+            <input type="text" name="Duree" class="duree" placeholder="La durée en mois">
+            <input type="submit" class="simuler" value="Simuler">
         </form>
         <div class="mensualite">
-            <p>Mensualité : </p>
+            <p>Mensualité (dh) : </p>
+            <p class="value"></p>
         </div>
     </section>
 
@@ -101,9 +102,10 @@
         </div>
         
     </section>
-    <div class="ruban">
+    <div class="ruban2">
         <h3>© 2024 Codebenders. All rights reserved</h3>    
     </div>
     <script src="./script.js"></script>
+    <script src="./pret.js"></script>
 </body>
 </html>
