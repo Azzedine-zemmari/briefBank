@@ -111,20 +111,20 @@ header button{
 }
 .hello h4{
     font-family: "Work Sans", sans-serif;
-    font-size: 65px;
-    font-weight: 400;
+    font-size: 55px;
+    font-weight: 450;
     color: #2D3742;
 }
 .hello h2{
     font-family: "Work Sans", sans-serif;
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: 800;
     color: #2D3742;
 }
 
 .p1{
     text-align: center;
-    margin: 50px 60px;
+    margin: 50px 100px;
     padding: 0 40px;
 }
 .p1 h2{
@@ -403,7 +403,6 @@ hr{
 .part1 h5, .part2 h5, .part3 h5{
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size:;
     color: #D6B031;
     padding: 2px 0 7px;
 }
