@@ -73,7 +73,7 @@ header button{
     header{
         padding: 0 10px;
     }
-    nav a{
+    .nav a{
         color: #2D394B;
     }
     header ul{
@@ -116,6 +116,7 @@ header button{
   position: relative;
   width: 100%;
   height: 100vh;
+  /* height: 70vh; */
   background: url(../images/im1.jpg);
   background-size: cover;
   background-position: center;
