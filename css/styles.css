@@ -99,7 +99,6 @@ p{
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 	grid-gap: 2rem;
 	align-items: center;
-	/*text-align: center;*/
 	margin-top: 1rem;
 }
 .row-itemsCenter{
@@ -133,7 +132,7 @@ p{
     width: 100%;
 }
 .container-box p {
-    width: 80%;
+    width: 95%;
 }
 
 .btn1 {
@@ -300,6 +299,10 @@ margin: 0 auto;
     .container{
         padding: 8px 8px;
        
+    }
+
+    .btn3 {
+        align-self: center;
     }
 }
 
