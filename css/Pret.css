@@ -203,6 +203,7 @@ header button{
 	font-family: 'Work Sans', sans-serif; 
 	width: auto;
     margin: 30px 20px;
+    padding-left: 50px;
 }
 
 .list h4{
