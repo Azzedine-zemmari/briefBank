@@ -4,22 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/Contact.css">
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="head">
-        <a href="./index.html"><img class="logo" src="./images/logo.svg" alt=""></a>
-        <img id="burger" src="./images/burger.svg" alt="">
-        <ul id="nav" class="nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./investisement.html">investisement</a></li>
-            <li><a href="./Pret.html">Prets</a></li>
-            <li><a href="./Apropos.html">A propos</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
-            <li><a href="./login.html">Connecter</a></li>
+     <!--section d'entête-->
+     <header id="head">
+       <a href="./index.html"><img class="logo" src="./images/logo.svg" alt=""></a>
+       <img id="burger" src="./images/burger.svg" alt="">
+       <ul id="nav" class="nav">
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="./investisement.html">investisement</a></li>
+         <li><a href="./Pret.html">Prets</a></li>
+         <li><a href="./Apropos.html">A propos</a></li>
+         <li><a href="./Contact.html">Contact</a></li>
+         <li><a href="./login.html">Connecter</a></li>
         </ul>
         <button><a href="./login.html">Connecter</a></button>
-    </header>
+      </header>
+      <section class="home-pret" id="home">
+        <div class="home-text">
+            <h1>FutureBank</h1>
+            <br>
+            <h1 style="font-weight: 900;">Contactez-nous</h1>
+        </div>
+      </section>
+
+    <section class="contact-form">
+      <h1 class="heading">Contactez-nous</h1>
+      <p class="para">Si vous avez des questions, n'hésitez pas à nous contacter via ce formmulaire.</p>
+  
+      <div class="contactForm">
+        <form action="#">
+          <h2 class="sub-heading">Formulaire de Contact</h2>
+           <input type="text" class="input" placeholder="votre nom">
+           <input type="text" class="input" placeholder="votre email">
+           <input type="text" class="input" placeholder="votre sujet">
+           <textarea class="input" cols="30" rows="5" placeholder="votre message..."></textarea>
+           <input type="submit" class="input submit" value="envoyer un message">
+        </form>
+        
+        <div class="map-container">
+          <div class="mapBg"></div>
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914410252845!2d2.291906375932066!3d48.85837360070842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2set!4v1695627657575!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <div class="contactMethod">
+        <div class="method">
+          <!-- <i class="fa-solid fa-location-dot contactIcon"></i> -->
+          <img src="images/Capture_d_écran_2024-10-21_145739-removebg-preview.png" alt="icone" class="contactIcon">
+          <article class="text">
+              <h1 class="sub-heading">Emplacement</h1>
+              <p class="para">aaaaaaaaaaaaaaaa</p>
+          </article>
+        </div>
+        
+        <div class="method">
+          <!-- <i class="fa-solid fa-envelope contactIcon"></i> -->
+          <img src="images/Capture_d_écran_2024-10-21_152136-removebg-preview.png" alt="icone" class="contactIcon">
+          <article class="text">
+              <h1 class="sub-heading">Email</h1>
+              <p class="para">aaaaaaaaaaaaaaaa</p>
+          </article>
+        </div>
+  
+        <div class="method">
+          <!-- <i class="fa-solid fa-phone contactIcon"></i> -->
+          <img src="images/Capture_d_écran_2024-10-21_152457-removebg-preview.png" alt="icone" class="contactIcon">
+          <article class="text">
+              <h1 class="sub-heading">Téléphone</h1>
+              <p class="para">aaaaaaaaaaaaaaaa</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <div class="faq"><h2 class="sub-heading">FAQ-Question fréquentes</h2></div>
+    <div class="container">
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Comment puis-je ouvrir un compte bancaire ?</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <hr>
+  
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Comment puis-je ouvrir un compte bancaire ?</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <hr>
+  
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Comment puis-je ouvrir un compte bancaire ?</span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <hr>
+  
+      </div>
+    </div>
+
     <script src="./script.js"></script>
+    <script src="./scriptcontact.js"></script>
 </body>
 </html>
