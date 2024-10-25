@@ -53,21 +53,21 @@ h2::after {
     height: 5px; 
     margin: 10px 0; 
     font-weight: bold; 
-    opacity: 0; /* Commence invisible */
+    opacity: 0; 
     background: linear-gradient(to right, rgb(255, 215, 0), rgb(255, 223, 100));
-    animation: grow 1s infinite; /* Appelle l'animation */
+    animation: grow 1s infinite; 
 }
 
 @keyframes grow {
     0% {
-        width: 0; /* Largeur initiale */
-        opacity: 0; /* Invisible au début */
+        width: 0; 
+        opacity: 0; 
     }
     50% {
-        opacity: 1; /* Devient visible à mi-chemin */
+        opacity: 1; 
     }
     100% {
-        width: 100px; /* Largeur finale */
+        width: 100px; 
         opacity: 1; 
     }
 }
@@ -180,6 +180,7 @@ align-self: start;
     border: 2px solid #C1A20B;
     transition: ease .40s; 
     align-self: end;
+    margin-top: 1rem;
 }
 
 .btn2:hover{
@@ -194,8 +195,8 @@ align-self: start;
     font-weight: 600;
 }
 .divFix{          
-    position: fixed; /* Utiliser fixed au lieu de sticky */
-    top: 30vh; /* Reste 30vh du haut de la page */
+    position: fixed;
+    top: 30vh;
     width: 80px;
     height: 80px;
     background: linear-gradient(to right, rgba(255, 215, 0, 0.7), rgba(255, 223, 100, 0.7));
@@ -228,15 +229,15 @@ margin: 0 auto;
 } 
 
 .divFix:hover  img{
-    animation: moveUpDown 0.5s infinite alternate; /* L'animation dure 1 seconde et se répète à l'infini */
+    animation: moveUpDown 0.5s infinite alternate; 
 }
 
 @keyframes moveUpDown {
     0% {
-        transform: translateY(0); /* Point de départ (position initiale) */
+        transform: translateY(0); 
     }
     100% {
-        transform: translateY(-5px); /* L'image se déplace de 10px vers le haut */
+        transform: translateY(-5px); 
     }
 }
 
@@ -260,16 +261,40 @@ margin: 0 auto;
 }
 
 
+
+/********* style slide**********/
+
+.carousel {
+    margin: auto;
+}
+.slides {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+
+/**********   Div Hide MObile / desktop **********/
+
+.block_hide-desktop {
+    display: none;
+}
+.block_hide-mobile{
+    display: block;
+}
+
 /**************** media ******************/
 @media (max-width: 768px) {
 
     :root {
-        --h2-font: 24px; /* Taille de police légèrement plus grande pour tablette */
+        --h2-font: 24px; 
         transition: .2s;
     }
 
     h1, h3 {
-        font-size: 32px; /* Ajustement pour une taille de police plus grande sur tablette */
+        font-size: 32px; 
     }
 
     h4 {
@@ -320,6 +345,12 @@ margin: 0 auto;
 
     .btn3 {
         align-self: center;
+    }
+    .block_hide-desktop {
+        display: block;
+    }
+    .block_hide-mobile{
+        display: none;
     }
 }
 
