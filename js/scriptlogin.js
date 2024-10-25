@@ -46,7 +46,7 @@ const loginAcessRegister = document.getElementById('loginAccessRegister'), // Se
       buttonRegister = document.getElementById('loginButtonRegister'), // Bouton pour créer un compte
       buttonAccess = document.getElementById('loginButtonAccess') // Bouton pour se connecter
 
-// Affiche le formulaire "Créer un compte" en ajoutant la classe 'active'
+// Affiche le formulaire Creeer un compte en ajoutant la classe tive
 buttonRegister.addEventListener('click', () => {
    loginAcessRegister.classList.add('active')
 })
@@ -59,7 +59,7 @@ buttonAccess.addEventListener('click', () => {
 
 // Redirection vers index.html lors du clic sur le bouton "Se connecter"
 loginButton.addEventListener('click', (event) => {
-  event.preventDefault(); // Empêche le comportement par défaut du bouton (soumission du formulaire)
-  window.location.href = 'index.html'; // Redirige vers index.html
+  event.preventDefault(); 
+  window.location.href = 'index.html'; 
 });
 
