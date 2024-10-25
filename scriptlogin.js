@@ -3,6 +3,7 @@ const passwordAccess = (loginPass, loginEye) => {
   // Sélectionner l'élément input (mot de passe) et l'icône oeil
   const input = document.getElementById(loginPass),
         iconEye = document.getElementById(loginEye)
+        
 
   // Ajouter un événement au clic sur l'icône œil
   iconEye.addEventListener('click', () => {
