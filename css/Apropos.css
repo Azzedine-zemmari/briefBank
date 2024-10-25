@@ -20,6 +20,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    z-index: 10;
     
 }
 header .logo{
@@ -55,7 +56,7 @@ header button{
 .nav :last-child a{
     display: none;
 }
-@media (max-width:600px){
+@media (max-width:800px){
     header{
         padding: 0 10px;
     }
@@ -104,10 +105,14 @@ header button{
     background-image: url(../images/images-Apropos/apropos.png);
     background-size: cover;
     background-position: center;
-    padding: 200px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 0;
+    padding: 5%;
 }
 .hello{
-    padding: 20px 100px 0;
+    text-align: justify;
 }
 .hello h4{
     font-family: "Work Sans", sans-serif;
@@ -124,23 +129,23 @@ header button{
 
 .p1{
     text-align: center;
-    margin: 50px 100px;
-    padding: 0 40px;
+    margin: 50px 8%;
+    padding: 0 5%;
 }
 .p1 h2{
     font-family: "Work Sans", sans-serif;
     font-size: 35px;
     font-weight: 600;
     color: #3C3C3C;
-    padding-top: 20px;
+    padding-top: 1%;
 }
 .p1 p{
     font-family: "Work Sans", sans-serif;
     color: #3C3C3C;
     text-align: justify;
     font-weight: 450;
-    font-size: 30px;
-    padding-top: 40px;
+    font-size: 26px;
+    padding-top: 3%;
 }
 .p1 h4{
     font-family: "Work Sans", sans-serif;
@@ -148,13 +153,13 @@ header button{
     font-size: 35px;
     font-weight: 550;
     text-align: start;
-    padding: 40px 0;
+    padding: 3% 0;
 }
 .stick{
     display: inline;
 }
 .stick img{
-    padding: 10px 30px;
+    padding: 2% 3%;
 }
 .stickers ul li{
     font-family: "Work Sans", sans-serif;
@@ -178,8 +183,8 @@ hr{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 80px 60px;
-    gap: 120px;
+    margin: 12%;
+    gap: 100px;
 }
 .p2 img{
     width: 33%;
@@ -206,11 +211,11 @@ hr{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 80px 60px;
-    gap: 120px;
+    margin: 12%;
+    gap: 100px;
 }
 .p3 img{
-    width: 26%;
+    width: 33%;
 }
 .Innovation h2{
     font-family: "Work Sans", sans-serif;
@@ -232,11 +237,11 @@ hr{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 80px 60px;
-    gap: 120px;
+    margin: 12%;
+    gap: 100px;
 }
 .p4 img{
-    width: 28%;
+    width: 33%;
 }
 .Confiance h2{
     font-family: "Work Sans", sans-serif;
@@ -255,7 +260,6 @@ hr{
 }
 .p5{
     text-align: center;
-    gap: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,9 +280,39 @@ hr{
     color: #484B50;
     text-align: justify;
     font-weight: 550;
-    font-size: 18px;
-    padding: 20px 20px;
+    font-size: 15px;
+    padding: 2% 12%;
+    /* margin: 2% 12%; */
 }
+
+.slider-1 .slider {
+    display: flex;
+    animation: slide-1 9s ease-in-out infinite; 
+}
+.slider-1 {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide1 p{
+    max-width: 300px;
+    margin: 0 0 12px 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 5px 0 0;
+}
+
+
+@keyframes slide-1 {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-100%); }
+    75% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
 .slide1 h2{
     font-family: "Work Sans", sans-serif;
     color: #3C3C3C;
@@ -286,46 +320,52 @@ hr{
     font-weight: 600;
     padding: 10px 0;
 }
-.slide1{
+.slide1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink:0 ;
+    width: 100%;
     text-align: center;
-    border:10px solid #2D3742;
-    padding: 10px 20px;
+    border:8px solid #2D3742;
     border-radius: 0 120px 0 80px;
-    outline:4px solid #D6B031;
 }
 .slide1 img{
     
+    padding: 5%;
+    width: 300px;
 }
 
 
 
-
-
-.elm-slide ul li{
+.elm-slide{
     font-family: "Work Sans", sans-serif;
-    display: inline-block;
-    font-weight:bold;
+    flex-direction: column;
 }
-.static1 li{
+
+.static1 , .static2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.static1 p{
+    align-self: flex-start;
     color: #D6B031;
-    padding: 0 80px;
     font-weight: 200px;
     font-size: xx-large;
-    margin: 40px 0 0;
+    padding: 5% 33%;
 }
-.static2 li{
+span{
+    color: #D6B031;
+}
+
+.static2 p{
     color: #2D3742;
-    padding: 0 45px;
     font-weight:bold;
     font-size: large;
+    padding: 0 25%;
 }
-
-
-
-
 
 
 /* .p6{
@@ -355,23 +395,26 @@ hr{
 }
 
 
-.sponsor ul{
-    display: inline;
+.sponsor {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0 80px;
     margin: 40px 0 0;
 }
 
 .Partenaires{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .part1 img , .part2 img , .part3 img{
     padding: 2px 8px 0 2px;
     width: 180px;
-    height:280px;
+    height:250px;
     border-radius: 0 0 40px;
 }
 .part1,.part2,.part3{
@@ -385,6 +428,7 @@ hr{
     border: 8px solid #0095D9;
     border-top: 0;
     border-radius: 0 120px 0 80px;
+    overflow: hidden;
 }
 .part2{
     border: 8px solid  #D6B031;
@@ -394,11 +438,11 @@ hr{
 .info-part{
     padding: 5px 25px;
     font-family: "Work Sans", sans-serif;
-    color: #FFFFFF;
 }
 .part1 h3, .part2 h3, .part3 h3{
     font-weight: 600;
     font-size: x-large;
+    color: #EDF0FA;
 }
 .part1 h5, .part2 h5, .part3 h5{
     font-family: "Inter", sans-serif;
@@ -409,6 +453,8 @@ hr{
 .part1 p, .part2 p, .part3 p{
     font-weight: 540;
     font-size: 16px;
+    color: white;
+    padding: 2% 5% 0 0;
 }
 
 .sponsor{
@@ -429,17 +475,15 @@ footer{
     margin: 10px 0 0 0 ;
 }
 .all{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(170px , auto));
     padding:20px 20px;
     color: #f5f5f5;
     justify-content: center;
     /* flex-wrap: wrap ; */
 }
-.c1 , .c2{
-    display: flex;
-}
 .Fdescription img{
-    width: 200px;
+    width: 170px;
     margin-bottom: 10px;
 }
 .Fdescription , .Explore , .Apropos , .social{
@@ -471,4 +515,220 @@ footer{
     padding: 20px 0;
     font-weight: 700;
 }
+@media (max-width:934px){
+   .p2 , .p3 ,.p4{
+    flex-direction: column;
+   }
+   .p2 img , .p3 img , .p4 img{
+    width: 80%;
+   }
+   .slide1{
+    margin: 7%;
+    flex-direction: column;
+   }
+   .slide1{
+    border-color: #D6B031;
+    outline: none;
+   }
+   .part1 img , .part2 img , .part3 img{
+    width: 150px;
+    margin-top: 1px;
+   }
+   .part1 , .part2 , .part3{
+    width: 300px;
+   }
+   .info-part p{
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.3;
+   }
+   .part2 h5{
+    text-align: left;
+   }
+   .elm-slide{
+    display: none;
+   }
+}
 
+
+@media (max-width:928px) {
+    .head{
+        height: 330px;
+    }
+    .hello h4 {
+        font-size: 27px;
+    }
+    .hello h2 {
+        font-size: 30px;
+    }
+    .p1 h2{
+        font-size: 24px;
+    }
+    .p1 p{
+        font-size: 16px;
+    }
+    .p1 h4{
+        font-size: 22px;
+    }
+    .all{
+        flex-direction: column;
+    }
+    .slider-1 .slider {
+        width: 80%;
+        animation: none;
+        margin: 0 auto ;
+    }
+    .slide1{
+        width: 500px;
+    }
+    
+    .futureBank img{
+        width: 90%;
+        height: 250px;
+    }
+    .futureBank h2{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .description p{
+        font-weight: 700;
+        padding: 0 15px 15px 0;
+    }
+    .deleted{
+        display: none;
+    }
+    .Fdescription , .Explore , .Apropos , .social{
+        margin: 1px 10px ;
+    }
+    .Fdescription img{
+        width: 130px;
+    }
+    .social h6 , .Explore h4, .Apropos h5{
+        font-size: 18px;
+    }
+    .social {
+        margin-top: 10px;
+    }
+    .c2 .Apropos{
+        margin-right: 60px;
+    }
+    .social img {
+        width: 30px;
+        padding: 0 5px 0;
+    }
+    .socialLinks svg{
+       width: 20px;
+       height: 20px;
+    }
+    .Fdescription , .Explore , .Apropos , .social{
+        margin:0 20px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .head{
+        height: 250px;
+    }
+    .hello h4 {
+        font-size: 20px;
+    }
+    .hello h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .p1 h2{
+        font-size: 16px;
+    }
+    .p1 p{
+        font-size: 14px;
+    }
+    .p1 h4{
+        font-size: 18px;
+    }
+    .slide1{
+        margin: 0;
+        width: 300px;
+    }
+    .slider-1 .slider {
+        width: 80%;
+        animation: none;
+        margin: 0 auto ;
+    }
+    
+    .deleted{
+        display: none;
+    }
+    .stick img{
+        height:60px ;
+    }
+    .stickers ul{
+        display: flex;
+    }
+    .stickers li{
+        justify-content: space-around;
+        align-items: center;        
+    }
+    .stickers ul li{
+        padding: 5px 12px
+    }
+    .Partenaires .part1{
+        height:420px ;
+    }
+    .Partenaires .part2{
+        height:420px ;
+    }
+    .Partenaires .part3{
+        height:420px ;
+    }
+    .Partenaires img{
+        height: 220px;
+    }
+    .p2 , .p3 , .p4 {
+        gap: 20px;
+    }
+    .p2 img , .p3 img , .p4 img {
+        width: 100%;
+    }
+    .futureBank img{
+        width: 90%;
+        height: 250px;
+    }
+    .futureBank h2{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .description p{
+        font-weight: 700;
+        padding: 0 15px 15px 0;
+    }
+    .all{
+        flex-direction: column;
+    }
+    .Fdescription , .Explore , .Apropos , .social{
+        margin: 1px 10px ;
+    }
+    .Fdescription img{
+        width: 130px;
+    }
+    .social h6 , .Explore h4, .Apropos h5{
+        font-size: 18px;
+    }
+    .social {
+        margin-top: 10px;
+    }
+    .c2 .Apropos{
+        margin-right: 60px;
+    }
+    .social img {
+        width: 30px;
+        padding: 0 5px 0;
+    }
+    .socialLinks svg{
+       width: 20px;
+       height: 20px;
+    }
+    .Fdescription , .Explore , .Apropos , .social{
+        margin:0 20px;
+    }
+}
