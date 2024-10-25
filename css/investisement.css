@@ -163,7 +163,7 @@ footer{
 }
 .all{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px , auto));
+    grid-template-columns: repeat(auto-fit,minmax(170px , auto));
     padding:20px 20px;
     color: #f5f5f5;
     justify-content: center;
@@ -276,10 +276,6 @@ footer{
     .all{
         flex-direction: column;
     }
-    .c1,.c2{
-        display: flex;
-        justify-content: center;
-    }
     .Fdescription , .Explore , .Apropos , .social{
         margin: 0 ;
     }
@@ -299,7 +295,7 @@ footer{
         width: 30px;
         padding: 0 5px 0;
     }
-    .socialLinks svg{
+    .socialLinks svg{   
        width: 20px;
        height: 20px;
     }
@@ -308,15 +304,24 @@ footer{
 @media (max-width:400px){
     .card img , .card{
         width: 290px;
+        height: max-content;
     }
+    .social h6 , .Explore h4, .Apropos h5{
+        font-weight:bold ;
+    }
+
 }
 /* tablet media query */
 @media (min-width:800px) and (max-width:1400px){
     .projects{
         grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(2,auto);
     } 
     .card img , .card{
         width: 300px;
+        height: max-content;
+
+    }
+    .Fdescription img{
+        width: 130px;
     }
 }
