@@ -193,7 +193,7 @@ header button{
 }
 .footer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
     grid-gap: 2rem;
 	margin-top: 30px; 
     background-color: #2D3742;
@@ -202,22 +202,22 @@ header button{
 .list, .futurebank{
 	font-family: 'Work Sans', sans-serif; 
 	width: auto;
-    margin: 30px 20px;
-    padding-left: 50px;
+    margin: 16px 8px;
+    padding-left: 16px;
 }
 
 .list h4{
 	font-family: 'Work Sans', sans-serif; 
-	font-size: 24px;
+	font-size: 20px;
 	color: #FFFFFF;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	position: relative;
 }
 .futurebank h4{
     font-family: 'Work Sans', sans-serif; 
-	font-size: 24px;
+	font-size: 20px;
 	color: #D6B031;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	position: relative;
 }
 .list li {
@@ -256,7 +256,7 @@ header button{
     font-family: 'Work Sans', sans-serif;
     color: #2D394B;
 }
-@media (max-width:600px){
+@media (max-width:767px){
     header{
         padding: 0 10px;
     }
