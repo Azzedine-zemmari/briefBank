@@ -459,7 +459,10 @@ header button{
 .nav :last-child a{
     display: none;
 }
-@media (max-width:600px){
+.sticky{
+    background-color: #2D394B;
+}
+@media (max-width:800px){
     header{
         padding: 0 10px;
     }

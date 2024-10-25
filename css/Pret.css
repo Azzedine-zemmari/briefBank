@@ -56,6 +56,9 @@ header button{
 .nav :last-child a{
     display: none;
 }
+.sticky{
+    background-color: #2D394B;
+}
 
 /* end nav  */
 
