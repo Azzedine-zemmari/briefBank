@@ -31,3 +31,7 @@ FutureBank, une banque visionnaire, souhaite révolutionner l'expérience bancai
     cd briefBank
     ```
 3. **Ouvrir le Fichier `index.html` dans le Navigateur** pour visualiser le site localement.
+
+## **links**
+[figma](https://www.figma.com/design/nvQ6phVKvJfM5GntpVK4x9/brief3?node-id=0-1&node-type=canvas&t=5Yat88pdrgR9Hjfm-0)
+[githubPlaning](https://github.com/users/Azzedine-zemmari/projects/10/views/1)
