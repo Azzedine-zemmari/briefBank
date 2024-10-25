@@ -131,9 +131,10 @@ p{
     justify-items: center;
 	padding: 1rem 1rem;
     width: 100%;
+  
 }
 .container-box p {
-    width: 80%;
+    width: 95%;
 }
 
 .btn1 {
@@ -197,10 +198,10 @@ align-self: start;
     top: 30vh; /* Reste 30vh du haut de la page */
     width: 80px;
     height: 80px;
-    background: linear-gradient(to right, rgb(255, 215, 0), rgb(255, 223, 100));
-   /* background-color: #D6B031;*/
-    right: 0; /* Place l'élément à gauche */
+    background: linear-gradient(to right, rgba(255, 215, 0, 0.7), rgba(255, 223, 100, 0.7));
+    right: 0; 
     text-align: center;
+    cursor: pointer;
 
 }
 .divFix img{
@@ -253,9 +254,73 @@ margin: 0 auto;
     margin-top: 1rem;
 }
 .logoPartenaire img{
-    width: 150px ;
-    max-height: 150px;
+    width: 100px ;
+    height: auto;
     margin: 0 50px;
+}
+
+
+/**************** media ******************/
+@media (max-width: 768px) {
+
+    :root {
+        --h2-font: 24px; /* Taille de police légèrement plus grande pour tablette */
+        transition: .2s;
+    }
+
+    h1, h3 {
+        font-size: 32px; /* Ajustement pour une taille de police plus grande sur tablette */
+    }
+
+    h4 {
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    h5 {
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
+    .home {
+        height: 75vh; 
+        transition: .2s;
+    }
+    .container-box{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 0.5rem 0.5rem;
+        width: 100%;
+        align-items: center;
+    }
+    .container-box h2{
+        text-align: left;
+        margin: 0.5rem;
+    }
+    .logoPartenaire {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 0.2rem; 
+    }
+
+    .logoPartenaire img {
+        width: 100px; 
+        max-height: 100px;
+        margin: 0 2px;
+    }
+
+    .row-items {
+        gap: 1rem; 
+    }
+
+    .container {
+        padding: 16px 0px;
+    }
+
+    .btn3 {
+        align-self: center;
+    }
 }
 
 
@@ -263,20 +328,21 @@ margin: 0 auto;
 @media (max-width: 480px){
 
 	:root{
-	  --h2-font:24px;
+	  --h2-font:16px;
 	  transition: .2s;
 	}
     h1 h3{
         font-size:32px ;
     }
     h4{
-        font-size:18px ;
+        font-size:16px ;
         margin: 0 auto;
     }
     h5{
         font-size:16px ;
         margin: 0 auto;
     }
+
   
 	.home{
 		height: 85vh;
@@ -301,54 +367,11 @@ margin: 0 auto;
         padding: 8px 8px;
        
     }
-}
-
-/*************************** query tablette ******************/
-@media (max-width: 768px) {
-
-    :root {
-        --h2-font: 28px; /* Taille de police légèrement plus grande pour tablette */
-        transition: .2s;
+    .img-paragraphe{
+        width: 70%;
+        height: auto;
     }
 
-    h1, h3 {
-        font-size: 40px; /* Ajustement pour une taille de police plus grande sur tablette */
-    }
-
-    h4 {
-        font-size: 22px;
-        margin: 0 auto;
-    }
-
-    h5 {
-        font-size: 20px;
-        margin: 0 auto;
-    }
-
-    .home {
-        height: 75vh; /* Ajustement de la hauteur pour tablette */
-        transition: .2s;
-    }
-
-    .logoPartenaire {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Colonnes plus larges pour tablette */
-        grid-gap: 0.2rem; /* Espacement légèrement augmenté */
-    }
-
-    .logoPartenaire img {
-        width: 100px; /* Taille des logos ajustée pour tablette */
-        max-height: 100px;
-        margin: 0 2px;
-    }
-
-    .row-items {
-        gap: 1rem; /* Plus d'espace entre les éléments pour tablette */
-    }
-
-    .container {
-        padding: 16px 0px; /* Plus de padding pour une meilleure lisibilité sur tablette */
-    }
 }
 
 
