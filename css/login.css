@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -195,7 +194,7 @@ img {
   color: #0095D9;
 }
 
-.login__access, 
+.login__access,
 .login__register {
   position: absolute;
   left: 0;
@@ -211,7 +210,7 @@ img {
 }
 
 /* Input focus move up label */
-.login__input:focus ~ .login__label {
+.login__input:focus~.login__label {
   transform: translateY(-12px);
   font-size: .688rem;
 }
@@ -221,7 +220,7 @@ img {
 }
 
 /* Input focus sticky top label */
-.login__input:not(:placeholder-shown).login__input:not(:focus) ~ .login__label {
+.login__input:not(:placeholder-shown).login__input:not(:focus)~.login__label {
   transform: translateY(-12px);
   font-size: .688rem;
 }
@@ -235,8 +234,8 @@ img {
   border-color: #0095D9;
 }
 
-.login__input:focus ~ .login__label,
-.login__input:focus ~ .login__icon {
+.login__input:focus~.login__label,
+.login__input:focus~.login__icon {
   color: #0095D9;
 }
 
@@ -284,20 +283,25 @@ img {
     width: 460px;
     margin: initial;
   }
-  .login__access, 
+
+  .login__access,
   .login__register {
     width: 600px;
   }
+
   .login__title {
     text-align: initial;
     margin-bottom: 3rem;
   }
+
   .login__button {
     margin-bottom: 3rem;
   }
+
   .login__group {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .login__blob {
     display: block;
     height: 100vh;
@@ -305,6 +309,7 @@ img {
     top: 0;
     right: 0;
   }
+
   .login__img {
     transform: translate(0rem, 0rem);
   }
