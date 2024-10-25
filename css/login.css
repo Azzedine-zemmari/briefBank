@@ -178,6 +178,8 @@ img {
 .login__switch {
   text-align: center;
   font-size: .813rem;
+  /* color: #000000;
+  font-weight: 600; */
 }
 
 .login__switch button {
