@@ -82,7 +82,7 @@ h4{
 p{
     text-align: justify;
     margin: 1rem ; 
-    width: 100%;
+    width: 90%;
     
 }
 .container{
@@ -96,20 +96,37 @@ p{
 }
 .row-items{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 1rem;
 }
 .row-itemsCenter{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	text-align: center;
+    justify-content: center;
 	margin-top: 1rem;
 }
 
+.row-itemsCenter img{
+	width: 250px;
+    height: auto    ;
+}
+.flex-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+  
+  .item-50 {
+    width: calc(50% - 20px);
+  }
+  
 .container-img img{
 	width: 250px;
     height: auto    ;
@@ -117,11 +134,12 @@ p{
 
 .img-paragraphe{
 
-    width: 100%;
-    height: 100%;
-	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
-	border-radius: 4px;
-	margin-bottom: 1rem;
+    width: 90%;
+   /* max-width: 250px;*/
+    height: auto;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
 .container-box{
@@ -278,7 +296,7 @@ margin: 0 auto;
     }
   
 	.home{
-		height: 85vh;
+		height: 60vh;
 		transition: .2s;
 	}
 
@@ -294,68 +312,53 @@ margin: 0 auto;
         margin: 0 2px;
     }
    .row-items{
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
         gap: 0.5rem;
+        align-items: center;
+        margin-top: 1rem;
     }
     .container{
         padding: 8px 8px;
+        background-color: #ffffff;
        
     }
-
-    .btn3 {
+    .btn3  {
         align-self: center;
     }
-}
-
-/*************************** query tablette ******************/
-@media (max-width: 768px) {
-
-    :root {
-        --h2-font: 28px; /* Taille de police légèrement plus grande pour tablette */
-        transition: .2s;
+    .btn3  {
+        align-self: center;
     }
-
-    h1, h3 {
-        font-size: 40px; /* Ajustement pour une taille de police plus grande sur tablette */
+    .btn2  {
+        align-self: center;
     }
-
-    h4 {
-        font-size: 22px;
-        margin: 0 auto;
-    }
-
-    h5 {
-        font-size: 20px;
-        margin: 0 auto;
-    }
-
-    .home {
-        height: 75vh; /* Ajustement de la hauteur pour tablette */
-        transition: .2s;
-    }
-
-    .logoPartenaire {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Colonnes plus larges pour tablette */
-        grid-gap: 0.2rem; /* Espacement légèrement augmenté */
-    }
-
-    .logoPartenaire img {
-        width: 100px; /* Taille des logos ajustée pour tablette */
-        max-height: 100px;
-        margin: 0 2px;
-    }
-
-    .row-items {
-        gap: 1rem; /* Plus d'espace entre les éléments pour tablette */
-    }
-
-    .container {
-        padding: 16px 0px; /* Plus de padding pour une meilleure lisibilité sur tablette */
+    .item-50 {
+        width: calc(100% - 20px);
+      }
+      .container-box{
+        max-width:250px;
+        max-height: auto;
     }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************/
+/*************************************************/
+/*************************************************/
 
 
 /************************************* start nav ******************************************/
